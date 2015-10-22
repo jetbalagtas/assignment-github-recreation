@@ -4,7 +4,8 @@ $(document).ready(function () {
 var avatarURL =  "<img src='" + user.avatar_url + "'>";
 $('.avatar').append(avatarURL);
 
-$('.user').html(user.name);
+var githubName = "<h1>" + user.name + "</h1>";
+$('.user').append(githubName);
 
 $('.username').html(user.login);
 
